@@ -157,8 +157,8 @@ def build_cnn(embed_model=None, num_of_words=None, word_dict=None,
     
     # compile model
     model.compile(loss=loss, optimizer=optimizer, metrics=metrics)
-    
-    # summarize model
+
+    # summarize
     print(model.summary())
     plot_model(model, show_shapes=True, to_file=model_image)
     
